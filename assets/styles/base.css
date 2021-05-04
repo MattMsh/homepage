@@ -27,8 +27,8 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
+    'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
 }
 
 h1,
@@ -137,7 +137,7 @@ li {
 
 ul > li::before {
   content: '●';
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   float: left;
   width: 1.5em;
   margin-left: -1.5em;
@@ -217,11 +217,6 @@ input {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
-}
-
-/* Show the overflow in IE and Edge */
-button,
-input {
   overflow: visible;
 }
 
@@ -591,6 +586,10 @@ article {
   }
 }
 
+.contacts li::before {
+  display: none;
+}
+
 /* Divider */
 .divider {
   border-top: 1px solid rgba(222, 222, 222, 1);
@@ -892,7 +891,7 @@ li.bordered > ul > details > div {
 .tags.bulleted .tag:not(:last-child)::after {
   content: '●';
   display: inline-block;
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-size: 1rem;
   margin: 0 0.25em 0 0.25em;
 }
